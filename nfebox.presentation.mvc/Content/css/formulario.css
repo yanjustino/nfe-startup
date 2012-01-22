@@ -1,0 +1,15 @@
+﻿.erro-partial
+{
+    color: Red;
+}
+
+
+div#login-form
+{
+    background-color: #666666;
+    z-index: 10;
+    float: right;
+    display: block;
+    padding: 10px;
+    color: #FFFFFF;
+}

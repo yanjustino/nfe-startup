@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2b52fe66-b198-4cc4-ae3b-4c7391c55c66" name="Yan@YAN-PC 2012-01-08 16:23:08" runUser="Yan-PC\Yan" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="03a47df2-4b72-4bd3-8124-eac166128a6c">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Yan_YAN-PC 2012-01-08 16_23_08">
+      <DeploymentItem filename="d:\projetos\nfebox\nfebox.domain.entities\bin\Debug\nfebox.domain.entities.dll" />
+      <DeploymentItem filename="d:\projetos\nfebox\nfebox.presentation.mvc\bin\nfebox.presentation.mvc.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-01-08T16:23:08.6951285-03:00" queuing="2012-01-08T16:23:10.8960467-03:00" start="2012-01-08T16:23:11.1700624-03:00" finish="2012-01-08T16:23:29.8132769-03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" passed="2" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CriarNotaApartirDoXml" storage="d:\projetos\nfebox\nfebox.domain.tests\bin\debug\nfebox.domain.tests.dll" id="7a299292-d530-aa01-a524-1d744f0fe448">
+      <Execution id="6e786c9f-373b-4992-8a68-46875e840c27" />
+      <TestMethod codeBase="d:/projetos/nfebox/nfebox.domain.tests/bin/Debug/nfebox.domain.tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="nfebox.domain.tests.FabricaNotaFiscalTest, nfebox.domain.tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CriarNotaApartirDoXml" />
+    </UnitTest>
+    <UnitTest name="Index" storage="d:\projetos\nfebox\nfebox.presentation.mvc.tests\bin\debug\nfebox.presentation.mvc.tests.dll" id="f019394f-8ce0-2dd1-ac52-f2561b487746">
+      <Execution id="d6d93d3b-9608-468c-a574-04e39644f76e" />
+      <TestMethod codeBase="d:/projetos/nfebox/nfebox.presentation.mvc.Tests/bin/Debug/nfebox.presentation.mvc.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="nfebox.presentation.mvc.Tests.Controllers.HomeControllerTest, nfebox.presentation.mvc.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Index" />
+    </UnitTest>
+    <UnitTest name="About" storage="d:\projetos\nfebox\nfebox.presentation.mvc.tests\bin\debug\nfebox.presentation.mvc.tests.dll" id="74b88077-e57f-c3ad-6393-41557148bf9e">
+      <Execution id="9e70c501-1308-4e8f-a375-bf02ac7661d4" />
+      <TestMethod codeBase="d:/projetos/nfebox/nfebox.presentation.mvc.Tests/bin/Debug/nfebox.presentation.mvc.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="nfebox.presentation.mvc.Tests.Controllers.HomeControllerTest, nfebox.presentation.mvc.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="About" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="74b88077-e57f-c3ad-6393-41557148bf9e" executionId="9e70c501-1308-4e8f-a375-bf02ac7661d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7a299292-d530-aa01-a524-1d744f0fe448" executionId="6e786c9f-373b-4992-8a68-46875e840c27" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f019394f-8ce0-2dd1-ac52-f2561b487746" executionId="d6d93d3b-9608-468c-a574-04e39644f76e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9e70c501-1308-4e8f-a375-bf02ac7661d4" testId="74b88077-e57f-c3ad-6393-41557148bf9e" testName="About" computerName="YAN-PC" duration="00:00:00.0973053" startTime="2012-01-08T16:23:11.3790721-03:00" endTime="2012-01-08T16:23:12.7151463-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e70c501-1308-4e8f-a375-bf02ac7661d4">
+    </UnitTestResult>
+    <UnitTestResult executionId="6e786c9f-373b-4992-8a68-46875e840c27" testId="7a299292-d530-aa01-a524-1d744f0fe448" testName="CriarNotaApartirDoXml" computerName="YAN-PC" duration="00:00:15.5850147" startTime="2012-01-08T16:23:12.7381476-03:00" endTime="2012-01-08T16:23:29.3472503-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6e786c9f-373b-4992-8a68-46875e840c27">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method nfebox.domain.tests.FabricaNotaFiscalTest.CriarNotaApartirDoXml threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at nfebox.domain.entities.factories.FabricaNotaFiscal.Criar(XElement xml) in d:\projetos\nfebox\nfebox.domain.entities\factories\FabricaNotaFiscal.cs:line 37
+   at nfebox.domain.tests.FabricaNotaFiscalTest.CriarNotaApartirDoXml() in d:\projetos\nfebox\nfebox.domain.tests\FabricaNotaFiscalTest.cs:line 18
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d6d93d3b-9608-468c-a574-04e39644f76e" testId="f019394f-8ce0-2dd1-ac52-f2561b487746" testName="Index" computerName="YAN-PC" duration="00:00:00.2448706" startTime="2012-01-08T16:23:29.3762519-03:00" endTime="2012-01-08T16:23:29.6402670-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6d93d3b-9608-468c-a574-04e39644f76e">
+    </UnitTestResult>
+  </Results>
+</TestRun>

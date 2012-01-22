@@ -1,0 +1,12 @@
+2012-01-08 10:08:52,463 DEBUG nfebox.presentation.mvc.Controllers.UsuarioController - Erro na ativação de conta do usuário yanlimaj@gmail.com
+nfebox.domain.exceptions.ServicosException: Erro ao tentar ativar usuário: A chave informada não foi localizada ou atribuida a nenhum usuário ---> nfebox.domain.exceptions.ServicosException: A chave informada não foi localizada ou atribuida a nenhum usuário
+   at nfebox.domain.services.ServicosUsuario.AtivarUsuario(String chave, String email) in d:\projetos\nfebox\nfebox.domain\services\ServicosUsuario.cs:line 60
+   --- End of inner exception stack trace ---
+   at nfebox.domain.services.ServicosUsuario.AtivarUsuario(String chave, String email) in d:\projetos\nfebox\nfebox.domain\services\ServicosUsuario.cs:line 70
+   at nfebox.presentation.mvc.Controllers.UsuarioController.Activate(String key, String email) in d:\projetos\nfebox\nfebox.presentation.mvc\Controllers\UsuarioController.cs:line 56
+2012-01-08 10:10:05,246 DEBUG nfebox.presentation.mvc.Controllers.UsuarioController - Erro na ativação de conta do usuário yanlimaj@gmail.com
+nfebox.domain.exceptions.ServicosException: Erro ao tentar ativar usuário: A chave informada não foi localizada ou atribuida a nenhum usuário ---> nfebox.domain.exceptions.ServicosException: A chave informada não foi localizada ou atribuida a nenhum usuário
+   at nfebox.domain.services.ServicosUsuario.AtivarUsuario(String chave, String email) in d:\projetos\nfebox\nfebox.domain\services\ServicosUsuario.cs:line 60
+   --- End of inner exception stack trace ---
+   at nfebox.domain.services.ServicosUsuario.AtivarUsuario(String chave, String email) in d:\projetos\nfebox\nfebox.domain\services\ServicosUsuario.cs:line 70
+   at nfebox.presentation.mvc.Controllers.UsuarioController.Activate(String key, String email) in d:\projetos\nfebox\nfebox.presentation.mvc\Controllers\UsuarioController.cs:line 56

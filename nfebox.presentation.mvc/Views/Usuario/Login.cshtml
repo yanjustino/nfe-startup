@@ -1,0 +1,44 @@
+﻿<div id="login-form">
+    <h2>
+        Login</h2>
+    @Html.Partial("~/Views/Shared/ErrosPartial.cshtml")
+    <div id="mensagem">
+    </div>
+    <div class="editor-label">
+        @Html.Label("Login")
+    </div>
+    <div class="editor-field">
+        @Html.TextBox("login", null, new { @id = "txtLogin" })
+    </div>
+    <div class="editor-label">
+        @Html.Label("Senha")
+    </div>
+    <div class="editor-field">
+        @Html.Password("senha", null, new { @id = "txtSenha" })
+    </div>
+    <br />
+    <input id="btnLogin" class="button orange" type="submit" value="Entrar" />
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnLogin").click(function () {
+
+            $.post(
+            "/usuario/login",
+            {
+                login: $("#txtLogin").val(),
+                senha: $("#txtSenha").val()
+            },
+            function (data) {
+                if (!data.success) {
+                    alert("Usuário e Senha não conferem");
+                    $("#txtLogin").focus();
+                }
+                else {
+                    document.location.href = "usuario/index";
+                }
+            });
+
+        });
+    });
+</script>

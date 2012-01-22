@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - presentation", "1 - presentation", "{D7A85740-1751-425E-8D48-467AC5D0357F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - domain", "2 - domain", "{5585DEE8-2211-480B-8D9F-7B6E9A9B9174}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nfebox.domain", "nfebox.domain\nfebox.domain.csproj", "{176C088A-EF39-448C-8A35-AA369F4C5FBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nfebox.domain.entities", "nfebox.domain.entities\nfebox.domain.entities.csproj", "{ECCFA6F0-796C-4E41-A468-2759DE21A6E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{80A04CB0-BC0A-46FE-99DC-BC95D6DC04C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1 - Database", "3.1 - Database", "{87E80CFE-1CAE-4ADA-A907-DDF265CE94D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nfebox.infrastructure.data", "nfebox.infrastructure.data\nfebox.infrastructure.data.csproj", "{3BA073A9-97CE-45FB-938F-7E2378BE3055}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC", "MVC", "{F702033C-A5F0-45D9-8ADC-78B12F5C404A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nfebox.presentation.mvc", "nfebox.presentation.mvc\nfebox.presentation.mvc.csproj", "{E8D94922-E783-477B-84F4-0B656833DABB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nfebox.presentation.mvc.Tests", "nfebox.presentation.mvc.Tests\nfebox.presentation.mvc.Tests.csproj", "{9346DCBD-2591-4C5E-8C29-87B87AB2F56B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nfebox.domain.tests", "nfebox.domain.tests\nfebox.domain.tests.csproj", "{7B46C848-F081-41B2-B210-566B72CDDE86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1543A460-22BF-41C1-99FC-F05B07ABBA9C}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		nfebox.vsmdi = nfebox.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = nfebox.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{176C088A-EF39-448C-8A35-AA369F4C5FBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{176C088A-EF39-448C-8A35-AA369F4C5FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{176C088A-EF39-448C-8A35-AA369F4C5FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{176C088A-EF39-448C-8A35-AA369F4C5FBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECCFA6F0-796C-4E41-A468-2759DE21A6E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECCFA6F0-796C-4E41-A468-2759DE21A6E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECCFA6F0-796C-4E41-A468-2759DE21A6E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECCFA6F0-796C-4E41-A468-2759DE21A6E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BA073A9-97CE-45FB-938F-7E2378BE3055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA073A9-97CE-45FB-938F-7E2378BE3055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BA073A9-97CE-45FB-938F-7E2378BE3055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA073A9-97CE-45FB-938F-7E2378BE3055}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8D94922-E783-477B-84F4-0B656833DABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D94922-E783-477B-84F4-0B656833DABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D94922-E783-477B-84F4-0B656833DABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D94922-E783-477B-84F4-0B656833DABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9346DCBD-2591-4C5E-8C29-87B87AB2F56B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9346DCBD-2591-4C5E-8C29-87B87AB2F56B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9346DCBD-2591-4C5E-8C29-87B87AB2F56B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9346DCBD-2591-4C5E-8C29-87B87AB2F56B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B46C848-F081-41B2-B210-566B72CDDE86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B46C848-F081-41B2-B210-566B72CDDE86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B46C848-F081-41B2-B210-566B72CDDE86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B46C848-F081-41B2-B210-566B72CDDE86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F702033C-A5F0-45D9-8ADC-78B12F5C404A} = {D7A85740-1751-425E-8D48-467AC5D0357F}
+		{176C088A-EF39-448C-8A35-AA369F4C5FBF} = {5585DEE8-2211-480B-8D9F-7B6E9A9B9174}
+		{ECCFA6F0-796C-4E41-A468-2759DE21A6E2} = {5585DEE8-2211-480B-8D9F-7B6E9A9B9174}
+		{7B46C848-F081-41B2-B210-566B72CDDE86} = {5585DEE8-2211-480B-8D9F-7B6E9A9B9174}
+		{1543A460-22BF-41C1-99FC-F05B07ABBA9C} = {5585DEE8-2211-480B-8D9F-7B6E9A9B9174}
+		{87E80CFE-1CAE-4ADA-A907-DDF265CE94D0} = {80A04CB0-BC0A-46FE-99DC-BC95D6DC04C9}
+		{3BA073A9-97CE-45FB-938F-7E2378BE3055} = {87E80CFE-1CAE-4ADA-A907-DDF265CE94D0}
+		{E8D94922-E783-477B-84F4-0B656833DABB} = {F702033C-A5F0-45D9-8ADC-78B12F5C404A}
+		{9346DCBD-2591-4C5E-8C29-87B87AB2F56B} = {F702033C-A5F0-45D9-8ADC-78B12F5C404A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="eb091827-646d-48ca-a442-0e7fd26dc169" name="Yan@YAN-PC 2012-01-20 20:21:56" runUser="Yan-PC\Yan" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="03a47df2-4b72-4bd3-8124-eac166128a6c">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Yan_YAN-PC 2012-01-20 20_21_56">
+      <DeploymentItem filename="D:\Projetos\nfebox\nfebox.domain.entities\bin\Debug\nfebox.domain.entities.dll" />
+      <DeploymentItem filename="D:\Projetos\nfebox\nfebox.domain\bin\Debug\nfebox.domain.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-01-20T20:21:56.6355376-03:00" queuing="2012-01-20T20:21:58.6306517-03:00" start="2012-01-20T20:21:58.9516701-03:00" finish="2012-01-20T20:22:10.4853298-03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CriarNotaApartirDoXml" storage="d:\projetos\nfebox\nfebox.domain.tests\bin\debug\nfebox.domain.tests.dll" id="7a299292-d530-aa01-a524-1d744f0fe448">
+      <Execution id="5319497e-20ff-4a8a-8b75-3c701b45ddfd" />
+      <TestMethod codeBase="D:/Projetos/nfebox/nfebox.domain.tests/bin/Debug/nfebox.domain.tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="nfebox.domain.tests.FabricaNotaFiscalTest, nfebox.domain.tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CriarNotaApartirDoXml" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="7a299292-d530-aa01-a524-1d744f0fe448" executionId="5319497e-20ff-4a8a-8b75-3c701b45ddfd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5319497e-20ff-4a8a-8b75-3c701b45ddfd" testId="7a299292-d530-aa01-a524-1d744f0fe448" testName="CriarNotaApartirDoXml" computerName="YAN-PC" duration="00:00:10.2366363" startTime="2012-01-20T20:21:59.1986842-03:00" endTime="2012-01-20T20:22:10.3473219-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5319497e-20ff-4a8a-8b75-3c701b45ddfd">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method nfebox.domain.tests.FabricaNotaFiscalTest.CriarNotaApartirDoXml threw exception: 
+System.InvalidCastException: Specified cast is not valid.</Message>
+          <StackTrace>    at nfebox.domain.entities.factories.FabricaNotaFiscalBase.ParseToDouble(XElement element, Object defaultValue) in D:\Projetos\nfebox\nfebox.domain.entities\factories\FabricaNotaFiscalBase.cs:line 37
+   at nfebox.domain.entities.factories.FabricaItemNotaFiscal.Criar(XElement xml) in D:\Projetos\nfebox\nfebox.domain.entities\factories\FabricaItemNotaFiscal.cs:line 36
+   at nfebox.domain.entities.factories.FabricaNotaFiscal.Criar(XElement xml, Usuario usuario) in D:\Projetos\nfebox\nfebox.domain.entities\factories\FabricaNotaFiscal.cs:line 43
+   at nfebox.domain.tests.FabricaNotaFiscalTest.CriarNotaApartirDoXml() in D:\Projetos\nfebox\nfebox.domain.tests\FabricaNotaFiscalTest.cs:line 18
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

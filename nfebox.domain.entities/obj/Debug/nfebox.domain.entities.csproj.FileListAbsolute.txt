@@ -1,0 +1,7 @@
+D:\Projetos\nfebox\nfebox.domain.entities\bin\Debug\nfebox.domain.entities.dll
+D:\Projetos\nfebox\nfebox.domain.entities\bin\Debug\nfebox.domain.entities.pdb
+D:\Projetos\nfebox\nfebox.domain.entities\bin\Debug\EntityFramework.dll
+D:\Projetos\nfebox\nfebox.domain.entities\bin\Debug\EntityFramework.xml
+D:\Projetos\nfebox\nfebox.domain.entities\obj\Debug\ResolveAssemblyReference.cache
+D:\Projetos\nfebox\nfebox.domain.entities\obj\Debug\nfebox.domain.entities.dll
+D:\Projetos\nfebox\nfebox.domain.entities\obj\Debug\nfebox.domain.entities.pdb

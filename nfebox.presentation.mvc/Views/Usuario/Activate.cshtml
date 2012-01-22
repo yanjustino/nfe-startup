@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Activate";
+}
+@{
+    if (ViewBag.Ativo == true)
+    {
+    <h1>
+        Bem-vindo!</h1>  
+    <h2>
+        Sua conta foi ativa com sucesso.</h2>
+    <br />
+    <p>
+        Agora você pode acessar sua conta e visualizar suas notas fiscais eletrônicas.<br />
+        Para saber mais sobre o nfebox acesse o link abaixo e descubra como obter maior
+        proveito de sua aplicação.
+    </p>
+    <br />
+    @Html.ActionLink("Página principal", "Index", "Home");
+    }
+    else
+    { 
+    <h1>
+        Opa!
+        <br />
+        Por algum motivo 
+        <br />
+        sua conta não foi ativa.</h1>  
+    <br />
+    <h2>
+        Fique tranquilo.
+        <br />
+        Uma notificação foi enviada para nossa equipe técnica.</h2>
+    <p>
+        Você pode tentar ativá-la novamente através do link contido em seu email.<br />
+        Se o problema persistir, acesse nosso canal de atendimento. Para isso,
+        <br />
+        confirme seu email abaixo e relate o problema ocorrido
+    </p>
+        using (Html.BeginForm("contato", "Email"))
+        {
+            var email = (string)@ViewBag.Email;
+    <div class="editor-label">
+        @Html.Label("Email de contato")
+    </div>
+    <div class="editor-field">
+        @Html.TextBox("edtEmail", email)
+    </div>
+            
+    <div class="editor-label">
+        @Html.Label("Relate o que ocorreu")
+    </div>
+    <div class="editor-field">
+        @Html.TextArea("txtMensagem", new { rows = "10", cols = "80" })
+    </div>
+    <br />
+    <input type="submit" value="Enviar mensagem" />
+        }
+    }
+}
+<br />

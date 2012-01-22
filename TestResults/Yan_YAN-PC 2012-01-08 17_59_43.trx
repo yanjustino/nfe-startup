@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="bae167d0-bb3f-4093-a50d-9b63ae451193" name="Yan@YAN-PC 2012-01-08 17:59:43" runUser="Yan-PC\Yan" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="03a47df2-4b72-4bd3-8124-eac166128a6c">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Yan_YAN-PC 2012-01-08 17_59_43">
+      <DeploymentItem filename="d:\projetos\nfebox\nfebox.domain.entities\bin\Debug\nfebox.domain.entities.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-01-08T17:59:43.9608080-03:00" queuing="2012-01-08T17:59:46.0289263-03:00" start="2012-01-08T17:59:46.3669456-03:00" finish="2012-01-08T18:01:45.1287384-03:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CriarNotaApartirDoXmlSemDataSaidaHoraSaida" storage="d:\projetos\nfebox\nfebox.domain.tests\bin\debug\nfebox.domain.tests.dll" id="862a1bb5-8869-2305-9c9b-be3aa20e6900">
+      <Execution id="313c55f8-69e4-43bc-a67b-11e87c35136c" />
+      <TestMethod codeBase="d:/projetos/nfebox/nfebox.domain.tests/bin/Debug/nfebox.domain.tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="nfebox.domain.tests.FabricaNotaFiscalTest, nfebox.domain.tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CriarNotaApartirDoXmlSemDataSaidaHoraSaida" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="862a1bb5-8869-2305-9c9b-be3aa20e6900" executionId="313c55f8-69e4-43bc-a67b-11e87c35136c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="313c55f8-69e4-43bc-a67b-11e87c35136c" testId="862a1bb5-8869-2305-9c9b-be3aa20e6900" testName="CriarNotaApartirDoXmlSemDataSaidaHoraSaida" computerName="YAN-PC" duration="00:01:57.2681595" startTime="2012-01-08T17:59:46.6329608-03:00" endTime="2012-01-08T18:01:44.9517283-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="313c55f8-69e4-43bc-a67b-11e87c35136c">
+    </UnitTestResult>
+  </Results>
+</TestRun>
