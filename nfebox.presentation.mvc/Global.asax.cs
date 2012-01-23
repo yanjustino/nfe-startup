@@ -23,7 +23,7 @@ namespace nfebox.presentation.mvc
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.IgnoreRoute("Email/{*pathInfo}");
-            routes.IgnoreRoute("Api/{*pathInfo}");
+            //routes.IgnoreRoute("Api/{*pathInfo}");
 
             routes.MapRoute(
                 "Default", // Route name

@@ -59,3 +59,6 @@ D:\Projetos\nfebox\nfebox.presentation.mvc\bin\log4net.dll
 D:\Projetos\nfebox\nfebox.presentation.mvc\bin\EntityFramework.Migrations.dll
 D:\Projetos\nfebox\nfebox.presentation.mvc\bin\log4net.xml
 D:\Projetos\nfebox\nfebox.presentation.mvc\bin\EntityFramework.Migrations.xml
+D:\Projetos\nfebox\nfebox.presentation.mvc\obj\Debug\nfebox.presentation.mvc.Properties.Resources.resources
+D:\Projetos\nfebox\nfebox.presentation.mvc\obj\Debug\GenerateResource.read.1.tlog
+D:\Projetos\nfebox\nfebox.presentation.mvc\obj\Debug\GenerateResource.write.1.tlog

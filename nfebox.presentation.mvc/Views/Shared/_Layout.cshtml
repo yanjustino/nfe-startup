@@ -16,6 +16,8 @@
                 <a id="link-login" href="#">Entrar</a>
                 @Html.ActionLink("Parceiros | ", "Login", "Usuario")
                 @Html.ActionLink("Saiba mais | ", "About", "Home")
+                @Html.ActionLink("Planos corporativos | ", "About", "Home")
+                @Html.ActionLink("Página inicial | ", "Index", "Home")
             </nav>
         </header>
         <div>
@@ -47,7 +49,7 @@
                 if ($(login_form).is(":visible")) {
                     $(link_login).css("background-color", "#666666");
                     $(link_login).css("color", "#ffffff");
-                    $("#txtlogin").focus();
+                    $("#txtLogin").focus();
                 }
             });
 

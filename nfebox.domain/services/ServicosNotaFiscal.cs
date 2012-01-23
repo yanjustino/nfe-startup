@@ -70,8 +70,8 @@ namespace nfebox.domain.services
                 if (!Directory.Exists("nfes"))
                     Directory.CreateDirectory("nfes");
 
-                if (!Directory.Exists(nota.CnpjCpfEmitente))
-                    Directory.CreateDirectory(nota.CnpjCpfEmitente);
+                if (!Directory.Exists("nfes//" + nota.CnpjCpfEmitente))
+                    Directory.CreateDirectory("nfes//" + nota.CnpjCpfEmitente);
 
                 var arquivo = string.Format("nfes//{0}//{1}.xml", nota.CnpjCpfEmitente, nota.ChaveAcesso);
                 nota.CaminhoXml = arquivo;
@@ -94,8 +94,8 @@ namespace nfebox.domain.services
                 if (!Directory.Exists("temp"))
                     Directory.CreateDirectory("temp");
 
-                xml.Save(arquivo);
-                ValidacaoSchemasXml.Validar(arquivo, "Resources\\nfe_v2.00.xsd");
+                File.WriteAllText(arquivo, xml.ToString(SaveOptions.DisableFormatting));
+                //ValidacaoSchemasXml.Validar(arquivo, "Resources\\nfe_v2.00.xsd");
             }
             catch (ServicosException ex)
             {

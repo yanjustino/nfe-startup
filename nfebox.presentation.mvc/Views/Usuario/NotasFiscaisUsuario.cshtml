@@ -1,0 +1,71 @@
+﻿@model IEnumerable<nfebox.domain.entities.NotaFiscal>
+
+<table>
+    <tr>
+        <th>
+            Número
+        </th>
+        <th>
+            Série
+        </th>
+        <th>
+            Tipo
+        </th>
+        <th>
+            Ambiente
+        </th>
+        <th>
+            ID
+        </th>
+        <th>
+            Emissão
+        </th>
+        <th>
+            CNPJ/CPF Emitente
+        </th>
+        <th>
+            CNPJ/CPF Destinatário
+        </th>
+        <th>
+            Valor Nota
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Numero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Serie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoNF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ambiente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChaveAcesso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataEmissao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CnpjCpfEmitente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CnpjCpfDestinatario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ValorNotaFiscal)
+        </td>
+        <td>
+            @Html.ActionLink("Baixar", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.Id }) |
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,11 +1,11 @@
 ﻿<div id="login-form">
     <h2>
-        Login</h2>
+        Acesso do usuário</h2>
     @Html.Partial("~/Views/Shared/ErrosPartial.cshtml")
     <div id="mensagem">
     </div>
     <div class="editor-label">
-        @Html.Label("Login")
+        @Html.Label("Login ( usuario / email )")
     </div>
     <div class="editor-field">
         @Html.TextBox("login", null, new { @id = "txtLogin" })
@@ -17,7 +17,7 @@
         @Html.Password("senha", null, new { @id = "txtSenha" })
     </div>
     <br />
-    <input id="btnLogin" class="button orange" type="submit" value="Entrar" />
+    <input id="btnLogin" class="button orange" type="submit" value="Entrar" style="width: 80px;" />
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
@@ -31,7 +31,7 @@
             },
             function (data) {
                 if (!data.success) {
-                    alert("Usuário e Senha não conferem");
+                    alert("Acesso negado: Login e senha não conferem");
                     $("#txtLogin").focus();
                 }
                 else {
