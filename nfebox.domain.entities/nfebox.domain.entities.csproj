@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="EntityFramework">
       <HintPath>..\..\VersionTools\packages\EntityFramework.4.2.0.0\lib\net40\EntityFramework.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
