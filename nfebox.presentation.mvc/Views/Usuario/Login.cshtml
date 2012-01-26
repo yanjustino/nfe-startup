@@ -32,10 +32,12 @@
             function (data) {
                 if (!data.success) {
                     alert("Acesso negado: Login e senha não conferem");
+                    $("#txtLogin").val("");
+                    $("#txtSenha").val("");
                     $("#txtLogin").focus();
                 }
                 else {
-                    document.location.href = "usuario/index";
+                    document.location.href = "../usuario/index";
                 }
             });
 

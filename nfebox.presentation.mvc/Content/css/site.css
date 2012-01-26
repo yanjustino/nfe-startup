@@ -17,6 +17,9 @@ a
 {
     color: #f78d1d;
     text-decoration: none;
+    padding-right: 8px;
+    font-family: Arial, Helvetica, sans-serif, Verdana;
+    font-size: 10pt;
 }
 nav
 {
@@ -25,6 +28,7 @@ nav
     margin-bottom: 0px;
     padding: 0px;
 }
+
 nav a
 {
     float: right;
@@ -34,6 +38,55 @@ nav a
     padding: 10px 5px 10px 5px;
     height: auto;
     margin-bottom: 0px;
+}
+
+#menu-bar
+{
+    float: left;
+    display: block;
+    margin-left: 5px;
+}
+
+.tab-page-header
+{
+    padding-left: 50px;
+    margin-left: -20px;
+    float: left;
+    width: 940px;
+    height: 60px;
+    display: block;
+    z-index: 5;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #C0C0C0;
+}
+
+nav .tab-page
+{
+    border-color: #C0C0C0;
+    padding: 11px 25px;
+    border-width: 1px;
+    float: left;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    text-align: center;
+    background-color: #F0F0F0;
+    z-index: 8;
+    font-family: Arial, Helvetica, sans-serif, Verdana;
+    font-size: 10pt;
+}
+
+.content-page
+{
+    float: left;
+    display: block;
+    z-index: 1;
+    padding: 5px;
+    width:940px;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 /* HEADINGS*/
@@ -100,6 +153,7 @@ input[type="text"], input[type="password"]
     font-size: 11pt;
     color: #444;
     width: 200px;
+    padding: 5px;
 }
 
 select
@@ -123,10 +177,26 @@ table
     border-collapse: collapse;
 }
 
+.row-expand
+{
+    background-color: #FFFFFF;
+}
+
+row-expand:hover
+{
+    background-color: #FFFF99;
+}
+
+row-expand-content
+{
+}
+
 table td
 {
     padding: 5px;
     border: solid 1px #e8eef4;
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serif, Verdana;
 }
 
 table th
@@ -135,7 +205,8 @@ table th
     text-align: left;
     background-color: #e8eef4;
     border: solid 1px #e8eef4;
-    font-size: 11px;
+    font-size: 10pt;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 .multicolumn
@@ -150,6 +221,7 @@ table th
 {
     float: left;
     width: 300px;
+    height: 250px;
     margin-left: 12px;
     padding-right: 5px;
     text-align: left;
@@ -228,6 +300,7 @@ table th
 .text-box
 {
     width: 150px;
+    padding: 5px;
 }
 .text-box.multi-line
 {
@@ -246,7 +319,7 @@ table th
     text-align: center;
     text-decoration: none;
     font: 14px/100% Arial, Helvetica, sans-serif;
-    padding: 8px 16px 8px;
+    padding: 5px 16px 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;

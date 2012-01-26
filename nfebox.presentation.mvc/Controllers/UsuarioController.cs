@@ -24,17 +24,11 @@ namespace nfebox.presentation.mvc.Controllers
             RepositorioNotas = repositorioNotas;
         }
 
+        [Authorize]
         public ActionResult Index()
         {
             var usuario = Servicos.UsuarioDaSessao();
-            if (usuario == null)
-                return RedirectToAction("Index", "Home");
-
-            List<NotaFiscal> notasFiscais = RepositorioNotas
-                                            .Buscar(n => n.UsuarioId == usuario.Id)
-                                            .ToList();
-            ViewBag.Notas = notasFiscais;
-
+            ViewBag.Notas = RepositorioNotas.Buscar(n => n.UsuarioId == usuario.Id).ToList();
             return View(usuario);
         }
 

@@ -40,6 +40,10 @@ namespace nfebox.domain.entities
 
         public virtual List<ItemNotaFiscal> Itens { get; set; }
 
+        [NotMapped]
+        public bool Selecionada { get; set; }
+
+
         [ForeignKey("UsuarioId")]
         public virtual Usuario Usuario { get; set; }
     }
