@@ -1,0 +1,23 @@
+﻿.erro-partial
+{
+    color: Red;
+}
+
+
+div#login-form
+{
+    background-color: #666666;
+    z-index: 10;
+    float: right;
+    display: block;
+    padding: 30px;
+    margin-top: -5px;
+    color: #FFFFFF;
+    width: auto;
+    margin-right: -50px;
+}
+
+div#menu-bar
+{
+    padding: 30px 0px;
+}

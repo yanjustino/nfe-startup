@@ -1,0 +1,46 @@
+﻿<div id="login-form">
+    <h2>
+        Acesso do usuário</h2>
+    @Html.Partial("~/Views/Shared/ErrosPartial.cshtml")
+    <div id="mensagem">
+    </div>
+    <div class="editor-label">
+        @Html.Label("Login ( usuario / email )")
+    </div>
+    <div class="editor-field">
+        @Html.TextBox("login", null, new { @id = "txtLogin" })
+    </div>
+    <div class="editor-label">
+        @Html.Label("Senha")
+    </div>
+    <div class="editor-field">
+        @Html.Password("senha", null, new { @id = "txtSenha" })
+    </div>
+    <br />
+    <input id="btnLogin" class="button orange" type="submit" value="Entrar" style="width: 80px;" />
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnLogin").click(function () {
+
+            $.post(
+            "/usuario/login",
+            {
+                login: $("#txtLogin").val(),
+                senha: $("#txtSenha").val()
+            },
+            function (data) {
+                if (!data.success) {
+                    alert("Acesso negado: Login e senha não conferem");
+                    $("#txtLogin").val("");
+                    $("#txtSenha").val("");
+                    $("#txtLogin").focus();
+                }
+                else {
+                    document.location.href = "../usuario/index";
+                }
+            });
+
+        });
+    });
+</script>

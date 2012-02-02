@@ -11,6 +11,17 @@ namespace nfebox.infrastructure.data.Context
 {
     public class nfeboxContext : DbContext
     {
+        public nfeboxContext()
+        {
+
+        }
+
+        public nfeboxContext(string connectionString)
+            : base(connectionString)
+        {
+
+        }
+
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<NotaFiscal> NotasFiscais { get; set; }
         public DbSet<Participante> Participantes { get; set; }

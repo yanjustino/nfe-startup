@@ -9,10 +9,13 @@ namespace nfebox.infrastructure.data.factories
 {
     public class FabricaConexao
     {
-        public static IConexao Criar()
+        public static IConexao Criar(string sqlserverUri = "")
         {
             var conexao = new Conexao();
-            conexao.Context = new nfeboxContext();
+            if (string.IsNullOrEmpty(sqlserverUri))
+                conexao.Context = new nfeboxContext();
+            else
+                conexao.Context = new nfeboxContext(ConnectionStringAppHarbor.CriarStringConexao(sqlserverUri));
             return conexao;
         }
     }

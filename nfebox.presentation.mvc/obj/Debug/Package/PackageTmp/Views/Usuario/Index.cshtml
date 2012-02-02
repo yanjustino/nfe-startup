@@ -1,0 +1,75 @@
+﻿@model nfebox.domain.entities.Usuario
+@using nfebox.domain.entities
+@{
+    Layout = "~/Views/Shared/_LayoutSistema.cshtml";
+    ViewBag.Title = "Index";
+    List<NotaFiscal> notas = ViewBag.Notas;
+}
+<h1>
+    Painel de controle
+    <br />
+    de documentos fiscais
+</h1>
+<div>
+    <nav class="tab-page-header">
+        <div id="tab-nfe" class="tab-page"><a href="#">Nota Fiscal Eletrônica</a></div>
+        <div id="tab-sped-pis" class="tab-page"><a href="#">SPED Fiscal</a></div>
+        <div id="tab-sped-pis-cofins" class="tab-page"><a href="#">SPED Pis Cofins</a></div>
+    </nav>
+
+    <div id="content-page-nfe" class="content-page">
+        <h1>NOTAS FISCAIS ELETRÔNICA</h1>
+        @Html.Partial("NotasFiscaisUsuario", notas)
+    </div>
+    <div id="content-page-sped" class="content-page">
+        <h1>SPED FISCAL</h1>
+        <br />
+        <h2>Área em construção! 
+        <br /> em breve estaremos implementando esta funcionalidade</h2>
+    </div>
+    <div id="content-page-sped-pis" class="content-page">
+        <h1>SPED PIS / COFINS</h1>
+        <br />
+        <h2>Área em construção! 
+        <br /> em breve estaremos implementando esta funcionalidade</h2>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".tab-page").css("background-color", "#F0F0F0");
+        $("#tab-nfe").css("background-color", "#FFFFFF");
+
+        $(".tab-page").css("padding", "11px 25px");
+        $("#tab-nfe").css("padding", "12px 25px");
+
+        $(".content-page").hide();
+        $("#content-page-nfe").show();
+
+        $(".tab-page").click(function () {
+            $(".tab-page").css("background-color", "#F0F0F0");
+            $(".tab-page").css("padding", "11px 25px");
+            $(".content-page").hide();
+
+            if ($(this).attr("id") == "tab-nfe") {
+                $(this).css("background-color", "#FFFFFF");
+                $(".tab-page").css("padding", "12px 25px");
+                $("#content-page-nfe").show();
+            }
+
+            if ($(this).attr("id") == "tab-sped-pis") {
+                $(this).css("background-color", "#FFFFFF");
+                $(".tab-page").css("padding", "12px 25px");
+                $("#content-page-sped").show();
+            }
+
+            if ($(this).attr("id") == "tab-sped-pis-cofins") {
+                $(this).css("background-color", "#FFFFFF");
+                $(".tab-page").css("padding", "12px 25px");
+                $("#content-page-sped-pis").show();
+            }
+        });
+
+
+    });
+</script>

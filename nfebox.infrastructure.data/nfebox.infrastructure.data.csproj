@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexao.cs" />
+    <Compile Include="Context\ConnectionStringAppHarbor.cs" />
     <Compile Include="Context\nfeboxContext.cs" />
     <Compile Include="contracts\IConexao.cs" />
     <Compile Include="factories\FabricaConexao.cs" />

@@ -12,11 +12,13 @@ namespace nfebox.presentation.mvc.App_Start
     using nfebox.domain.contracts;
     using nfebox.infrastructure.data.repositories;
     using nfebox.domain.services;
+    using System.Configuration;
 
     public static class NinjectMVC3
     {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();
-        private static IConexao Conexao = FabricaConexao.Criar();
+        private static string uriString;
+        private static IConexao Conexao;
 
         /// <summary>
         /// Starts the application
@@ -53,6 +55,9 @@ namespace nfebox.presentation.mvc.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            uriString = ConfigurationManager.AppSettings["SQLSERVER_URI"];
+            Conexao = FabricaConexao.Criar(uriString);
+
             kernel.Bind<IRepositorioUsuario>().To<RepositorioUsuario>().WithConstructorArgument("conexao", Conexao);
             kernel.Bind<IRepositorioNotaFiscal>().To<RepositorioNotaFiscal>().WithConstructorArgument("conexao", Conexao);
             kernel.Bind<IRepositorioParticipante>().To<ReposiotorioParticipante>().WithConstructorArgument("conexao", Conexao);

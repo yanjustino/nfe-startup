@@ -1,0 +1,94 @@
+﻿@model IEnumerable<nfebox.domain.entities.NotaFiscal>
+<div id="menu-bar">
+    <div>
+        emititas a partir de
+    </div>
+    <div class="editor-field">
+        @Html.TextBox("txtDataInicial", DateTime.Today.Date)
+        @Html.ActionLink("Filtrar", "Filtrar", "Usuario", new { @class = "button orange" })
+    </div>
+</div>
+<table width="940px">
+    <tr>
+        <th style="text-align: center">
+            @Html.CheckBox("chkAll", false)
+        </th>
+        <th>
+            Número
+        </th>
+        <th>
+            Série
+        </th>
+        <th align="center">
+            Tipo
+        </th>
+        <th>
+            ID
+        </th>
+        <th align="center">
+            Emissão
+        </th>
+        <th style="text-align: right">
+            Emissão
+        </th>
+        <th>
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        var tipoNota = item.TipoNF == "0" ? "Entrada" : "Saída";
+        var tipoAmbiente = item.Ambiente == "1" ? "Produção" : "Homologação";
+        var dataEmissao = item.DataEmissao.ToString("dd/MM/yyyy");
+        var valorNota = string.Format("{0:0.00}", item.ValorNotaFiscal);
+        
+        <tr>
+            <td align="center">
+                @Html.CheckBoxFor(modelItem => item.Selecionada, new { @class = "chk_item" })
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Numero)
+            </td>
+            <td align="center">
+                @Html.DisplayFor(modelItem => item.Serie)
+            </td>
+            <td align="center">
+                @tipoNota
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChaveAcesso)
+            </td>
+            <td align="center">
+                @dataEmissao
+            </td>
+            <td align="right">
+                @valorNota
+            </td>
+            <td align="center">
+                <a href="#" class="row-expand">Detalhe</a>
+            </td>
+        </tr>
+        <tr class="row-expand-content">
+            <td colspan="8">
+                <div>
+                    Nota Fiscal emitida em ambiente de @tipoAmbiente
+                    emitida por @Html.DisplayFor(modelItem => item.CnpjCpfEmitente)
+                    para @Html.DisplayFor(modelItem => item.CnpjCpfDestinatario)
+                </div>
+            </td>
+        </tr>
+    }
+</table>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".row-expand-content").hide()
+        $(".row-expand").click(function () {
+            var row = $(this).parent().parent();
+            $(row).next(".row-expand-content").toggle();
+        });
+    });
+
+    $("#chkAll").click(function () {
+        var check = $(this).is(":checked");
+        $(".chk_item").attr("checked", check);
+    });
+</script>

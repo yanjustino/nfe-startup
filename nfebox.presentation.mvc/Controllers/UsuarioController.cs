@@ -53,7 +53,8 @@ namespace nfebox.presentation.mvc.Controllers
             }
             catch (Exception ex)
             {
-                var mensagem = string.Format("Ocorreu um erro inesperado {0}", ex.Message);
+                var mensagem = string.Format("Ocorreu um erro inesperado {0} \r\n {1}", ex.Message, ex.InnerException.Message);
+                ViewBag.Erros = mensagem;
                 log.Error(mensagem, ex);
             }
             return View();

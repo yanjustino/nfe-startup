@@ -1,0 +1,12 @@
+﻿@using ActionMailer.Net
+@model nfebox.domain.entities.Usuario
+@{
+    Layout = null;
+}
+<h1>Bem-vindo ao nfeBox!</h1>
+<h2>Falta muito pouco para você concluir seu cadastro</h2>
+<br />
+Precisamos que você confirme os dados informados em nosso site.
+<br />Para isso, clique no link abaixo e ative sua conta!
+<br />@Url.Action("Activate", "Usuario", new { key = @Model.Chave, email = @Model.Email }, "http")
+Obrigado! 
