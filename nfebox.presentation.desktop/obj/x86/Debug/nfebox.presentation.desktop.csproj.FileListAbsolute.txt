@@ -1,0 +1,14 @@
+D:\Projetos\nfebox\nfebox.presentation.desktop\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projetos\nfebox\nfebox.presentation.desktop\obj\x86\Debug\nfebox.presentation.desktop.Properties.Resources.resources
+D:\Projetos\nfebox\nfebox.presentation.desktop\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Projetos\nfebox\nfebox.presentation.desktop\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Projetos\nfebox\nfebox.presentation.desktop\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Projetos\nfebox\nfebox.presentation.desktop\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Projetos\nfebox\nfebox.presentation.desktop\obj\x86\Debug\nfebox.presentation.desktop.IconMenuControl.resources
+D:\Projetos\nfebox\nfebox.presentation.desktop\bin\Debug\upfiscal.exe.config
+D:\Projetos\nfebox\nfebox.presentation.desktop\bin\Debug\upfiscal.exe
+D:\Projetos\nfebox\nfebox.presentation.desktop\bin\Debug\upfiscal.pdb
+D:\Projetos\nfebox\nfebox.presentation.desktop\obj\x86\Debug\upfiscal.exe
+D:\Projetos\nfebox\nfebox.presentation.desktop\obj\x86\Debug\upfiscal.pdb
+D:\Projetos\nfebox\nfebox.presentation.desktop\bin\Debug\nfebox.communication.dll
+D:\Projetos\nfebox\nfebox.presentation.desktop\bin\Debug\nfebox.communication.pdb

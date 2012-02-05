@@ -1,0 +1,5 @@
+D:\Projetos\nfebox\nfebox.communication\obj\Debug\ResolveAssemblyReference.cache
+D:\Projetos\nfebox\nfebox.communication\bin\Debug\nfebox.communication.dll
+D:\Projetos\nfebox\nfebox.communication\bin\Debug\nfebox.communication.pdb
+D:\Projetos\nfebox\nfebox.communication\obj\Debug\nfebox.communication.dll
+D:\Projetos\nfebox\nfebox.communication\obj\Debug\nfebox.communication.pdb

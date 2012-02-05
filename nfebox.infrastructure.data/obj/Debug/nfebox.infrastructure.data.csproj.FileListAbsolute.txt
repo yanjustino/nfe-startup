@@ -37,3 +37,4 @@ D:\Projetos\nfebox\nfebox.infrastructure.data\obj\Debug\nfebox.infrastructure.da
 D:\Projetos\nfebox\nfebox.infrastructure.data\obj\Debug\nfebox.infrastructure.data.pdb
 D:\Projetos\nfebox\nfebox.infrastructure.data\bin\Debug\EntityFramework.Migrations.dll
 D:\Projetos\nfebox\nfebox.infrastructure.data\bin\Debug\EntityFramework.Migrations.xml
+D:\Projetos\nfebox\nfebox.infrastructure.data\bin\Debug\nfebox.infrastructure.data.dll.config

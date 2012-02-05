@@ -74,6 +74,10 @@
       <Project>{176C088A-EF39-448C-8A35-AA369F4C5FBF}</Project>
       <Name>nfebox.domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\nfebox.infrastructure.data\nfebox.infrastructure.data.csproj">
+      <Project>{3BA073A9-97CE-45FB-938F-7E2378BE3055}</Project>
+      <Name>nfebox.infrastructure.data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\nfebox.presentation.mvc\nfebox.presentation.mvc.csproj">
       <Project>{E8D94922-E783-477B-84F4-0B656833DABB}</Project>
       <Name>nfebox.presentation.mvc</Name>

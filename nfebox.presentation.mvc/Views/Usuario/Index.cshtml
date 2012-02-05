@@ -15,26 +15,49 @@
         <div id="tab-nfe" class="tab-page"><a href="#">Nota Fiscal Eletrônica</a></div>
         <div id="tab-sped-pis" class="tab-page"><a href="#">SPED Fiscal</a></div>
         <div id="tab-sped-pis-cofins" class="tab-page"><a href="#">SPED Pis Cofins</a></div>
+        <div id="tab-dados-usuario" class="tab-page"><a href="#">Dados do Usuário</a></div>
     </nav>
-
     <div id="content-page-nfe" class="content-page">
-        <h1>NOTAS FISCAIS ELETRÔNICA</h1>
+        <h1>
+            NOTAS FISCAIS ELETRÔNICA</h1>
         @Html.Partial("NotasFiscaisUsuario", notas)
     </div>
     <div id="content-page-sped" class="content-page">
-        <h1>SPED FISCAL</h1>
+        <h1>
+            SPED FISCAL</h1>
         <br />
-        <h2>Área em construção! 
-        <br /> em breve estaremos implementando esta funcionalidade</h2>
+        <h2>
+            Área em construção!
+            <br />
+            em breve estaremos implementando esta funcionalidade</h2>
     </div>
     <div id="content-page-sped-pis" class="content-page">
-        <h1>SPED PIS / COFINS</h1>
+        <h1>
+            SPED PIS / COFINS</h1>
         <br />
-        <h2>Área em construção! 
-        <br /> em breve estaremos implementando esta funcionalidade</h2>
+        <h2>
+            Área em construção!
+            <br />
+            em breve estaremos implementando esta funcionalidade</h2>
+    </div>
+    <div id="content-dados-usuario" class="content-page">
+        <h1>
+            DADOS DO USUÁRIO</h1>
+        <div class="editor-label">
+            <h2>Email cadastrado</h2>
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.Email)
+        </div>
+        <div class="editor-label">
+            Chave de acesso
+            <a href="#">. clique aqui para cópiá-la para área de trabalho</a>
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.Chave, 8, 50, null)
+        </div>
     </div>
 </div>
-
 <script type="text/javascript">
     $(document).ready(function () {
         $(".tab-page").css("background-color", "#F0F0F0");
@@ -50,6 +73,7 @@
             $(".tab-page").css("background-color", "#F0F0F0");
             $(".tab-page").css("padding", "11px 25px");
             $(".content-page").hide();
+
 
             if ($(this).attr("id") == "tab-nfe") {
                 $(this).css("background-color", "#FFFFFF");
@@ -68,8 +92,12 @@
                 $(".tab-page").css("padding", "12px 25px");
                 $("#content-page-sped-pis").show();
             }
+
+            if ($(this).attr("id") == "tab-dados-usuario") {
+                $(this).css("background-color", "#FFFFFF");
+                $(".tab-page").css("padding", "12px 25px");
+                $("#content-dados-usuario").show();
+            }
         });
-
-
     });
 </script>

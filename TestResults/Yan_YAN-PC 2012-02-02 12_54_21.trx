@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="36666e09-6d8a-424e-ad9a-1d3b4fe4d165" name="Yan@YAN-PC 2012-02-02 12:54:21" runUser="Yan-PC\Yan" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="03a47df2-4b72-4bd3-8124-eac166128a6c">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Yan_YAN-PC 2012-02-02 12_54_21">
+      <DeploymentItem filename="D:\Projetos\nfebox\nfebox.presentation.mvc\bin\nfebox.presentation.mvc.dll" />
+      <DeploymentItem filename="D:\Projetos\nfebox\nfebox.domain.entities\bin\Debug\nfebox.domain.entities.dll" />
+      <DeploymentItem filename="D:\Projetos\nfebox\nfebox.domain\bin\Debug\nfebox.domain.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-02T12:54:21.1238568-03:00" queuing="2012-02-02T12:54:24.5400522-03:00" start="2012-02-02T12:54:24.8370692-03:00" finish="2012-02-02T12:54:27.9802489-03:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="1" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ChamarMetodoExecutarServicoGravarNotaFiscalPassandoUsuarioEXml" storage="d:\projetos\nfebox\nfebox.presentation.mvc.tests\bin\debug\nfebox.presentation.mvc.tests.dll" id="e6316397-b57b-7b65-f477-d99930ad7fc9">
+      <Execution id="a7e1aabf-0286-4b7f-8b16-f28d272f2615" />
+      <TestMethod codeBase="D:/Projetos/nfebox/nfebox.presentation.mvc.Tests/bin/Debug/nfebox.presentation.mvc.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="nfebox.presentation.mvc.Tests.Controllers.ApiControllerTest, nfebox.presentation.mvc.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChamarMetodoExecutarServicoGravarNotaFiscalPassandoUsuarioEXml" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="e6316397-b57b-7b65-f477-d99930ad7fc9" executionId="a7e1aabf-0286-4b7f-8b16-f28d272f2615" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a7e1aabf-0286-4b7f-8b16-f28d272f2615" testId="e6316397-b57b-7b65-f477-d99930ad7fc9" testName="ChamarMetodoExecutarServicoGravarNotaFiscalPassandoUsuarioEXml" computerName="YAN-PC" startTime="2012-02-02T12:54:25.0970840-03:00" endTime="2012-02-02T12:54:27.8362407-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7e1aabf-0286-4b7f-8b16-f28d272f2615">
+      <Output>
+        <ErrorInfo>
+          <Message>Unable to get default constructor for class nfebox.presentation.mvc.Tests.Controllers.ApiControllerTest.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

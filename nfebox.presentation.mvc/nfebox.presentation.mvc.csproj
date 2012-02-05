@@ -115,7 +115,10 @@
     <Content Include="Content\img\1327110411_navigation-down-frame_sticker.png" />
     <Content Include="Content\img\1327110717_dashboard_sticker.png" />
     <Content Include="Content\img\1327110719_user_sticker.png" />
-    <Content Include="Content\img\bannerImage.png" />
+    <Content Include="Content\img\1328404189_pie-chart_graph.png" />
+    <Content Include="Content\img\1328404211_arrow_up.png" />
+    <Content Include="Content\img\1328404236_base.png" />
+    <Content Include="Content\img\1328404350_navigation-up-frame_sticker.png" />
     <Content Include="Content\img\page-pricing-freetrial-hero.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -145,6 +148,7 @@
     <Content Include="Content\themes\base\jquery.ui.tabs.css" />
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
     <Content Include="Global.asax" />
+    <None Include="Content\fonts\FOLKS-BOLD.TTF" />
     <None Include="Resources\nfe24111208403578000109550010000415051001727279.xml" />
     <None Include="Resources\nfe24110604385909000166550010000000521001535245.xml" />
     <None Include="Resources\NFe24110604385909000166550010000000531001542290.xml" />

@@ -12,7 +12,7 @@ namespace nfebox.presentation.mvc
 
     public class MvcApplication : System.Web.HttpApplication
     {
-        public static string NomeSistema = "NFeBox";
+        public static string NomeSistema = "SPED Simples";
 
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
@@ -26,21 +26,15 @@ namespace nfebox.presentation.mvc
             //routes.IgnoreRoute("Api/{*pathInfo}");
 
             routes.MapRoute(
+                "ApiNFeJson", // Route name
+                "api/nfe/json", // URL with parameters
+                new { controller = "Api", action = "EFDJson" } // Parameter defaults
+            );
+
+            routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
-            );
-
-            routes.MapRoute(
-                "ApiNFeJson", // Route name
-                "api/nfe.json", // URL with parameters
-                new { controller = "Api", action = "NFeJson" } // Parameter defaults
-            );
-
-            routes.MapRoute(
-                "ApiNFeXml", // Route name
-                "api/nfe.xml", // URL with parameters
-                new { controller = "Api", action = "NFeXml" } // Parameter defaults
             );
         }
 
