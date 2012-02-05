@@ -12,3 +12,7 @@ D:\Projetos\nfebox\nfebox.presentation.desktop\obj\x86\Debug\upfiscal.exe
 D:\Projetos\nfebox\nfebox.presentation.desktop\obj\x86\Debug\upfiscal.pdb
 D:\Projetos\nfebox\nfebox.presentation.desktop\bin\Debug\nfebox.communication.dll
 D:\Projetos\nfebox\nfebox.presentation.desktop\bin\Debug\nfebox.communication.pdb
+D:\Projetos\nfebox\nfebox.presentation.desktop\bin\Debug\upfiscal.exe.manifest
+D:\Projetos\nfebox\nfebox.presentation.desktop\bin\Debug\upfiscal.application
+D:\Projetos\nfebox\nfebox.presentation.desktop\obj\x86\Debug\upfiscal.exe.manifest
+D:\Projetos\nfebox\nfebox.presentation.desktop\obj\x86\Debug\upfiscal.application

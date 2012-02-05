@@ -148,7 +148,7 @@
     <Content Include="Content\themes\base\jquery.ui.tabs.css" />
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
     <Content Include="Global.asax" />
-    <None Include="Content\fonts\FOLKS-BOLD.TTF" />
+    <Content Include="Content\fonts\FOLKS-BOLD.TTF" />
     <None Include="Resources\nfe24111208403578000109550010000415051001727279.xml" />
     <None Include="Resources\nfe24110604385909000166550010000000521001535245.xml" />
     <None Include="Resources\NFe24110604385909000166550010000000531001542290.xml" />

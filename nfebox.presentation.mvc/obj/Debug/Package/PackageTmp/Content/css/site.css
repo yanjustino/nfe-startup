@@ -83,7 +83,7 @@ nav .tab-page
     display: block;
     z-index: 1;
     padding: 5px;
-    width:940px;
+    width: 940px;
     height: auto;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -92,8 +92,8 @@ nav .tab-page
 /* HEADINGS*/
 h1
 {
-    font-size: 35pt;
-    font-family: Segoe UI Light, "Trebuchet MS" , Verdana, Helvetica, Sans-Serif;
+    font-size: 38pt;
+    font-family: "Folks Negrito", Segoe UI Light, "Trebuchet MS" , Verdana, Helvetica, Sans-Serif;
     padding-bottom: 0;
     margin-bottom: 0;
 }
@@ -118,6 +118,12 @@ h5, h6
 }
 
 /* PRIMARY LAYOUT ELEMENTS*/
+@font-face
+{
+    font-family: "Folks Negrito";
+    src: url("../fonts/Folks-Bold.ttf");
+}
+
 .page
 {
     width: 940px;
@@ -213,18 +219,18 @@ table th
 {
     float: none;
     display: block;
-    margin-left: -20px;
-    margin-top: 20px;
+    margin-left: 0px;
+    margin-top: 10px;
 }
 
 .multicolumn div
 {
     float: left;
-    width: 300px;
+    width: 250px;
     height: 250px;
-    margin-left: 12px;
-    padding-right: 5px;
-    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
     font-size: 10pt;
 }
 

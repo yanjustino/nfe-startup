@@ -6,44 +6,47 @@
         <b style="color: #f78d1d;">
         @global_asax.NomeSistema</b>
         <br />
-        Simples, rápido e gratuito</h1>
+        Fácil, rápido e gratuito</h1>
     <h2 style="color: Gray">
         Cadastre-se, baixe nosso aplicativo e tenha as melhores 
         <br />análises gerenciais a partir de suas NFe's.
         <br />
     </h2>
-    @Html.ActionLink("Tenha uma conta FREE!", "Create", "Usuario", null, new { @class = "button green" })
-    @Html.ActionLink("Conheça nossos planos!", "Create", "Usuario", null, new { @class = "button green" })
+    @Html.ActionLink("Tenha uma conta FREE!", "Create", "Usuario", null, new { @class = "button orange" })
+    @Html.ActionLink("Conheça nossos planos!", "Create", "Usuario", null, new { @class = "button orange" })
 </div>
 <div class="multicolumn">
     <div class="border-right-dotted">
         <h1>
-            1. Cadastro</h1>
-        <img src="../../Content/img/1327110719_user_sticker.png" align="middle" style="float: left" height="64px" width="64px" />
+        <img src="../../Content/img/1328404236_base.png" align="middle" style="float: left; padding: 15px 15px 0px 0px" />
+        Cadastre
+        </h1>
         <p>
             @Html.ActionLink("Cadastre-se", "Create", "Usuario")
             em nosso site e tenha as melhores análises gerenciais
-            a partir de suas NFe's. Sem burocracia, sem cadastros excessivos. Além disso, garanta
+            a partir de seus arquivos de escrituração fiscal. Sem burocracia, 
+            sem cadastros excessivos. Além disso, garanta
             a segurança dos seus arquivos de notas fiscais eletrônicas.
         </p>
     </div>
     <div class="border-right-dotted">
         <h1>
-            2. Download</h1>
-        <img src="../../Content/img/1327110411_navigation-down-frame_sticker.png" align="middle"
-            style="float: left" />
+        <img src="../../Content/img/1328404211_arrow_up.png" align="middle" style="float: left; padding: 15px 15px 0px 0px" />
+        Sincronize
+        </h1>
         <p>
-            @Html.ActionLink("Baixe", "Create", "Usuario")
-            nosso aplicativo ou integre seu sistema de ERP com nossa solução
-            para enviar suas notas fiscais eletrônicas.
+            @Html.ActionLink("Integre", "Create", "Usuario")
+            seu ERP através de nossas bibliotecas ou implemente um canal de comunicação
+            seguindo os padrões estabelecidos pela nossa API.
             Leia nossa @Html.ActionLink("Documentação", "Create", "Usuario")
-            de integração e transimita com segurança seus arquivos fiscais.
+            de integração e transimita com segurança seus arquivos de escrituração fiscail.
         </p>
     </div>
     <div>
         <h1>
-            3. Análise</h1>
-        <img src="../../Content/img/1327110717_dashboard_sticker.png" align="middle" style="float: left" />
+        <img src="../../Content/img/1328404189_pie-chart_graph.png" align="middle" style="float: left; padding: 15px 15px 0px 0px" />
+         Analise
+        </h1>
         <p>
             Com sua conta no @global_asax.NomeSistema
             você pode acessar o @Html.ActionLink("painel de documentos fiscais", "Create", "Usuario")

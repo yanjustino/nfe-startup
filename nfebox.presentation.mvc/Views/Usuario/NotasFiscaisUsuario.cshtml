@@ -1,12 +1,16 @@
 ﻿@model IEnumerable<nfebox.domain.entities.NotaFiscal>
-<div id="menu-bar">
-    <div>
-        emititas a partir de
+<div id="menu-bar" style="float:left; display:block; width: 100%;">
+    <div class="editor-field" style="float: left">
+        Emissão inicial
+        @Html.TextBox("txtDataInicial", DateTime.Today.Date.ToShortDateString(), new { @style = "width: 100px" })
     </div>
-    <div class="editor-field">
-        @Html.TextBox("txtDataInicial", DateTime.Today.Date)
-        @Html.ActionLink("Filtrar", "Filtrar", "Usuario", new { @class = "button orange" })
+    <div class="editor-field" style="float: left">
+        Emissão Final
+        @Html.TextBox("txtDataInicial", DateTime.Today.Date.ToShortDateString(), new { @style = "width: 100px" })
     </div>
+</div>
+<div style="float:left; display:block; width: 100%">
+    @Html.ActionLink("Filtrar", "Filtrar", "Usuario", new { @class = "button orange" })
 </div>
 <table width="940px">
     <tr>

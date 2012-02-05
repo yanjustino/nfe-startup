@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="upfiscal.exe" version="1.0.0.0" publicKeyToken="f123d74ee8839e7b" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="1328229285_box_open.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="upfiscal" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="upfiscal.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nfebox.communication.dll" size="7168">
+      <assemblyIdentity name="nfebox.communication" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>DSwNGKYKI1SlciQkjP10vR0fgZc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="upfiscal.exe" size="23552">
+      <assemblyIdentity name="upfiscal" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>EUl8qrlKRttCmjiThu/2rNVTiuM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="1328229285_box_open.ico" size="5430">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>T+fxZbnkbq9Cteal3li2skDd98M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="upfiscal.exe.config" size="117">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>a3Forh+i+nzyaONrpGeK7Sudu10=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Yan-PC\Yan" issuerKeyHash="1d3ca60f068b45cdb2637ab2ea55bb9150c73268" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>snls3SpVVovO1HF59t7khP7Mlew=</DigestValue></Reference></SignedInfo><SignatureValue>OaRZ7J0Xy2G2BdUfGuI4RVXUlPQhhVntnR0J12mrZPeYKHfc81kbUhS260FoH7/dFfQvZz/ext8KYs6/VpNzzvyYVMS/LBdHIi3Lj37mr+x+BfGSEj77DpImtanwFQSUgzpO+Zf5hhUXP3jGFTFsXbaIBVjKJCmH9NkZCNcQo5Q=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>8pl2ZSs7eHSeahbZMP6QmlV4AhJFEia03pWzMH54PCeDevu0OZTrhHPZA1JQ2sNLeLt4X43mOivWU0uXfWBq2Vy6qGVZ7jxUfgocV3juUZVDHJxA5Ly6lhFiSK2GjZxPWZOH9EOC5+rThJRMbJx0pHp3RblOgEVnMvWyTSMyBTU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="ec95ccfe84e4def67971d4ce8b56552add6c79b2" Description="" Url=""><as:assemblyIdentity name="upfiscal.exe" version="1.0.0.0" publicKeyToken="f123d74ee8839e7b" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Yan-PC\Yan</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>ZFR7JBqq+djOjOgpBgywKJ5iyNA=</DigestValue></Reference></SignedInfo><SignatureValue>e0IkSpbLSnwDLDhUm8is7iIkYpp6Mnm0fl3kzAwrV2p5xtsKge5KaMXRHQL7B04EcxKHUK8bZw1hu8jbLDCi4jl8X33xAKLWPPfE7FmqXqSvG/RVmr1IRgB6222w8DYXL17k1XvRdLuJ47045jl3nNoXqazIk6WNtUL0GV+R2Co=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>8pl2ZSs7eHSeahbZMP6QmlV4AhJFEia03pWzMH54PCeDevu0OZTrhHPZA1JQ2sNLeLt4X43mOivWU0uXfWBq2Vy6qGVZ7jxUfgocV3juUZVDHJxA5Ly6lhFiSK2GjZxPWZOH9EOC5+rThJRMbJx0pHp3RblOgEVnMvWyTSMyBTU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQM/yK+mX6sphKuxPCFhU2LjANBgkqhkiG9w0BAQUFADAfMR0wGwYDVQQDHhQAWQBhAG4ALQBQAEMAXABZAGEAbjAeFw0xMjAyMDUwMjIwNDBaFw0xMzAyMDQwODIwNDBaMB8xHTAbBgNVBAMeFABZAGEAbgAtAFAAQwBcAFkAYQBuMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDymXZlKzt4dJ5qFtkw/pCaVXgCEkUSJrTelbMwfng8J4N6+7Q5lOuEc9kDUlDaw0t4u3hfjeY6K9ZTS5d9YGrZXLqoZVnuPFR+ChxXeO5RlUMcnEDkvLqWEWJIrYaNnE9Zk4f0Q4Ln6tOElExsnHSkendFuU6ARWcy9bJNIzIFNQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAK51Ckc8P+tL9Xat+jvGXBtDEWy81n6gPmVDlP5i/jn+Tk3qlj3RCoPdDDerwECfQGw3ejBfWXOgZCjlGi3ay41oljaUKQXD/8AGCVjjBGiDaTcoNE9mc99GDKO+/uQf9eORINoUB1qhxiEhpmz62DUb8SuDtTmWvy44DTG1JDmW</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
